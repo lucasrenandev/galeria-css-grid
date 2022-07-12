@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#galeria-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 300px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.galeria-content {
+    position: relative;
+}
+
+.galeria-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-content span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+.row-1 {
+    grid-row: span 1;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.column-1 {
+    grid-column: span 1;
+}
+
+.column-2 {
+    grid-column: span 2;
+}
